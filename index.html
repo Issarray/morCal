@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mortgage Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #121212;">
+        <a class="navbar-brand" href="#">Mortgage Calculator</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://feeltheburn.netlify.app/">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">GitHub</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid" style="background-color: rgb(141, 192, 252); ">
+        <div class="container">
+            <h1 class="display-3">Mortgage Calculator</h1>
+            <p class="lead">Calculate your Mortgage</p>
+            <hr class="my-2">
+            <p>Utilize this tool to help in calculating your mortgage</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center"><h1>Get Started</h1></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!--inputs card-->
+            <div class="col-md-4 offset-1">
+              <div class="card border-dark">
+                <div class="card-body">
+                  <h3 class="card-title text-center">Input Values</h3>
+                  <hr>
+                  <div class= "col">
+                    <label for="loan">Loan Amount</label>
+                    <input id="pBal" type="text" class="form-control">
+                   </div>
+                   <div class= "col">
+                    <label for="down payment">Down Payment</label>
+                    <input id="1stPay" type="text" class="form-control">
+                   </div>
+                   <div class = "col">
+                    <div class="form-group">
+                        <label>Term (Months)</label>
+                        <input id="months" type="text" class="form-control">
+                     </div>
+                  </div>
+                  <div class = "col">
+                      <div class="form-group">
+                        <label>Rate</label>
+                        <input id="apr" type="text"class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    
+                    <button id="calButt" type="button" class="btn btn-primary offset-4">Calculate</button>
+              </div>
+              </div>
+            </div>
+
+            <!--outputs card-->
+            <div class= "col-lg-6">
+              <div class="card border-dark col-form-label-sm">
+                <div class="card-body">
+                  <h3 class="card-title text-center">Your Monthly Payments</h3>
+                  <hr>
+                  <p><b>Total Monthly Payment: </b><span id="outMPay"></span></p>
+                  <p><b>Total Principal: </b><span id="outPrin"></span></p>
+                  <p><b>Total Interest: </b> <span id="outInt"></span></p>
+                  <p><b>Total Monthly Payment: </b> <span id="outMPay"></span></p>
+                </div>
+              </div>
+            </div>  
+        </div>
+        <!--<div class="row">
+            <div class="col">
+            
+            </div>
+
+        </div>--->
+        <br>
+        
+        <!--table-->
+        <div class="row">
+            <div class="col-10 offset-1">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Payment</th>
+                            <th>Principle</th>
+                            <th>Interest</th>
+                            <th>Total Interest</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td scope="row"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                        
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+
+        
+        
+        
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/morCal.js"></script>
+  </body>
+</html>
